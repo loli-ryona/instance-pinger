@@ -1,6 +1,6 @@
 {
     "host": "smtp.example.com",
-    "port": "25",
+    "port": 25,
     "username": "test@example.com",
     "password": "password",
     "encryption": "None",
