@@ -8,8 +8,8 @@ Port - Mail provider port (e.g 587, 465, 25, etc)<br>
 Username - Auth Username<br>
 Password - Auth Password<br>
 Encryption - Type of security to use (None, SSL, SSLTLS, STARTTLS, TLS)<br>
-From - From message
-To - Email to send to
-Subject - Subject of the email
-Alternative - Alt text if enabled in main.go (not needed usually)
+From - From message<br>
+To - Email to send to<br>
+Subject - Subject of the email<br>
+Alternative - Alt text if enabled in main.go (not needed usually)<br>
 
