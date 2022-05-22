@@ -1,0 +1,13 @@
+{
+    "host": "smtp.example.com",
+    "port": "25",
+    "username": "test@example.com",
+    "password": "password",
+    "encryption": "None",
+
+    "from": "From Example <test@example.com>",
+    "to": "alerts@example.com",
+    "subject": "Instance Alert",
+
+    "alternative": "Instance Alert"
+}
