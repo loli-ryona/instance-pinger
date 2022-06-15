@@ -95,11 +95,15 @@ func main() {
 func pingInstance(addr string) (bool, error) {
 	//Create pinger for address
 	pinger, err := ping.NewPinger(addr)
+	
+	//Set this to false if on linux and run the following command in cli:
+	//sudo sysctl -w net.ipv4.ping_group_range="0 2147483647"
 	pinger.SetPrivileged(true)
 	if err != nil {
 		fmt.Println(err)
 		return false, err
 	}
+	
 	pinger.Timeout = time.Second * 10
 
 	//Send and receive 4 bytes
