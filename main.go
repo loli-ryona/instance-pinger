@@ -218,9 +218,6 @@ func sendAlert(downed []string) {
 	fmt.Println("Building Message")
 	email := mail.NewMSG()
 	email.SetFrom(smtp.From).AddTo(smtp.To).SetSubject(smtp.Subject)
-	for i := 0; i < len(downed); i++ {
-		bodyStr = bodyStr + downed[i]
-	}
 	email.SetBody(mail.TextHTML, bodyStr)
 	//email.AddAlternative(mail.TextPlain, smtp.Alternative)
 	//email.SetDate(time.Now().String())
