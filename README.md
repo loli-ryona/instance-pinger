@@ -22,3 +22,8 @@ setcap cap_net_raw=+ep /path/to/your/compiled/binary
 ```
 If you are encountering other problems with the pinging function have a read through the library's installation and supported operating<br>
 systems section in the README.md @ [Go-Ping](https://github.com/go-ping/ping)
+
+## TODO
+1. Split instance ping and domain ping into different sections so it isn't as messy. i.e, instances.json only contains the addresses for the direct instance.<br>
+   I will add a domains.json file where websites/domains can be stored and then the script will do two pings, one on the actual instance servers, and then <br>
+   another on the domains/websites. I will then make the email have 2 sections, one for instances and one for domains.
